@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KALIEVA TRAVEL — авторские туры по Казахстану</title>
+<meta name="description" content="Авторские туры по Казахстану: Чарын, Кольсай, Каинды, Мангистау, Туркестан, Алтын-Эмель. Малые группы до 12 человек, свои гиды, вся логистика на нас.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f5f54'/><path d='M6 22 L13 11 L18 18 L21 14 L26 22 Z' fill='%23faf7f2'/></svg>">
+</head>
+<body id="top">
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__name">KALIEVA TRAVEL</span>
+      <span class="brand__sub">туры по Казахстану</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#tours">Туры</a>
+      <a href="#dates">Даты заездов</a>
+      <a href="#about">Об агентстве</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#request" class="nav__cta">Оставить заявку</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero__media">
+      <img src="assets/hero-bozzhyra.jpg" alt="Меловые останцы урочища Бозжыра в Мангистау" width="1600" height="1200">
+    </div>
+    <div class="hero__content">
+      <h1>Казахстан не помещается<br>в один отпуск</h1>
+      <p class="hero__lead">
+        Собираем и сами ведём авторские маршруты — от Чарына и Кольсая до меловых плато Мангистау.
+        Группы до 12 человек, проверенные гиды, транспорт, ночёвки и пропуска берём на себя.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#tours">Смотреть маршруты</a>
+        <a class="btn btn--ghost" href="#dates">Ближайшие даты</a>
+      </div>
+      <dl class="facts">
+        <div><dt>8 лет</dt><dd>водим группы по стране</dd></div>
+        <div><dt>1 400+</dt><dd>путешественников с 2018 года</dd></div>
+        <div><dt>до 12</dt><dd>человек в группе, не больше</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section tours" id="tours">
+    <div class="section__head">
+      <h2>Маршруты сезона</h2>
+      <p>Семь направлений, которые мы возим регулярно и знаем до последнего поворота. Цена — за человека, дорога из Алматы или Астаны включена.</p>
+    </div>
+
+    <div class="tours__grid">
+
+      <article class="tour tour--wide">
+        <div class="tour__media"><img src="assets/tour-mangistau.jpg" alt="Долина Бозжыра, Мангистау" loading="lazy"></div>
+        <div class="tour__body">
+          <span class="tour__region">Мангистау</span>
+          <h3>Бозжыра, Тузбаир и Шеркала</h3>
+          <p>Пять дней по белой пустыне на внедорожниках: меловые клыки Бозжыры, солончак Тузбаир, некрополь Бекет-Ата и ночёвка в юрточном лагере под открытым небом.</p>
+          <ul class="tour__meta">
+            <li><strong>5 дней</strong> — 4 ночи</li>
+            <li>Ближайший заезд — 10 октября</li>
+            <li>Сложность — средняя</li>
+          </ul>
+          <div class="tour__foot">
+            <span class="price">от 295 000 ₸</span>
+            <button class="btn btn--small" data-tour="Мангистау — Бозжыра и Тузбаир">Забронировать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <div class="tour__media"><img src="assets/tour-charyn.jpg" alt="Чарынский каньон" loading="lazy"></div>
+        <div class="tour__body">
+          <span class="tour__region">Алматинская область</span>
+          <h3>Чарын и Долина замков</h3>
+          <p>Каньон на закате, прогулка по дну ущелья и ужин у реки. Самый короткий способ увидеть большой Казахстан за выходные.</p>
+          <ul class="tour__meta">
+            <li><strong>2 дня</strong> — 1 ночь</li>
+            <li>Заезд — 19 сентября</li>
+          </ul>
+          <div class="tour__foot">
+            <span class="price">от 68 000 ₸</span>
+            <button class="btn btn--small" data-tour="Чарын и Долина замков">Забронировать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <div class="tour__media"><img src="assets/tour-kolsai.jpg" alt="Кольсайские озёра" loading="lazy"></div>
+        <div class="tour__body">
+          <span class="tour__region">Кольсай</span>
+          <h3>Кольсайские озёра</h3>
+          <p>Три дня в еловых горах: подъём ко второму озеру, ночь в гостевом доме в Саты, конная прогулка и баня после маршрута.</p>
+          <ul class="tour__meta">
+            <li><strong>3 дня</strong> — 2 ночи</li>
+            <li>Заезд — 26 сентября</li>
+          </ul>
+          <div class="tour__foot">
+            <span class="price">от 115 000 ₸</span>
+            <button class="btn btn--small" data-tour="Кольсайские озёра">Забронировать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <div class="tour__media"><img src="assets/tour-kaindy.jpg" alt="Озеро Каинды с затопленным еловым лесом" loading="lazy"></div>
+        <div class="tour__body">
+          <span class="tour__region">Каинды</span>
+          <h3>Затопленный лес Каинды</h3>
+          <p>Однодневная вылазка к озеру с еловыми стволами под водой. Выезжаем в шесть утра, возвращаемся в Алматы к ночи.</p>
+          <ul class="tour__meta">
+            <li><strong>1 день</strong> — без ночёвки</li>
+            <li>Заезд — 24 октября</li>
+          </ul>
+          <div class="tour__foot">
+            <span class="price">от 32 000 ₸</span>
+            <button class="btn btn--small" data-tour="Затопленный лес Каинды">Забронировать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <div class="tour__media"><img src="assets/tour-turkistan.jpg" alt="Мавзолей Ходжи Ахмеда Ясауи в Туркестане" loading="lazy"></div>
+        <div class="tour__body">
+          <span class="tour__region">Туркестан</span>
+          <h3>Туркестан и городище Отрар</h3>
+          <p>Мавзолей Ходжи Ахмеда Ясауи, раскопки Отрара и Сауран. Историк ведёт группу все три дня, поезд туда — самолёт обратно.</p>
+          <ul class="tour__meta">
+            <li><strong>3 дня</strong> — 2 ночи</li>
+            <li>Заезд — 17 октября</li>
+          </ul>
+          <div class="tour__foot">
+            <span class="price">от 98 000 ₸</span>
+            <button class="btn btn--small" data-tour="Туркестан и городище Отрар">Забронировать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <div class="tour__media"><img src="assets/tour-altynemel.jpg" alt="Поющий бархан в Алтын-Эмеле" loading="lazy"></div>
+        <div class="tour__body">
+          <span class="tour__region">Алтын-Эмель</span>
+          <h3>Поющий бархан и Актау</h3>
+          <p>Бархан, который гудит под ногами, разноцветные горы Актау и шанс встретить куланов. Пропуска в нацпарк оформляем заранее.</p>
+          <ul class="tour__meta">
+            <li><strong>2 дня</strong> — 1 ночь</li>
+            <li>Заезд — 3 октября</li>
+          </ul>
+          <div class="tour__foot">
+            <span class="price">от 74 000 ₸</span>
+            <button class="btn btn--small" data-tour="Алтын-Эмель — Поющий бархан">Забронировать</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <div class="tour__media"><img src="assets/tour-burabay.jpg" alt="Скала Окжетпес в Бурабае" loading="lazy"></div>
+        <div class="tour__body">
+          <span class="tour__region">Бурабай</span>
+          <h3>Бурабай и Окжетпес</h3>
+          <p>Сосны, гранитные скалы и озеро Боровое в двух шагах от Астаны. Зимний заезд — с коньками по льду и баней.</p>
+          <ul class="tour__meta">
+            <li><strong>3 дня</strong> — 2 ночи</li>
+            <li>Заезд — 7 ноября</li>
+          </ul>
+          <div class="tour__foot">
+            <span class="price">от 87 000 ₸</span>
+            <button class="btn btn--small" data-tour="Бурабай и Окжетпес">Забронировать</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section dates" id="dates">
+    <div class="section__head">
+      <h2>Даты заездов</h2>
+      <p>Группы набираются заранее — на популярные маршруты места разбирают за месяц. Бронь держим три дня без предоплаты.</p>
+    </div>
+
+    <div class="filters" id="filters" role="group" aria-label="Фильтр по месяцу">
+      <button class="filter is-active" data-month="all">Все месяцы</button>
+      <button class="filter" data-month="9">Сентябрь</button>
+      <button class="filter" data-month="10">Октябрь</button>
+      <button class="filter" data-month="11">Ноябрь</button>
+      <button class="filter" data-month="12">Декабрь</button>
+    </div>
+
+    <div class="schedule" id="schedule"></div>
+    <p class="schedule__empty" id="scheduleEmpty" hidden>В этом месяце заездов пока нет — напишите нам, соберём группу под вас.</p>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="about__text">
+      <h2>Агентство Аружан Калиевой</h2>
+      <p class="lead">
+        Я начала возить друзей на Чарын в 2018 году, а сейчас у нас команда из семи гидов и водителей,
+        офис в Алматы и маршруты по всей стране.
+      </p>
+      <p>
+        Мы не перепродаём чужие туры. Каждый маршрут я проезжаю сама до того, как он появится на сайте:
+        проверяю дорогу, гостевые дома, воду, связь и то, где группа будет обедать в шесть вечера посреди степи.
+      </p>
+      <ul class="about__list">
+        <li><strong>Всё включено в цену</strong> — транспорт, ночёвки, питание по программе, пропуска в нацпарки и работа гида.</li>
+        <li><strong>Договор и чеки</strong> — работаем официально, оплата на счёт ИП, возврат по условиям договора.</li>
+        <li><strong>Малые группы</strong> — 8–12 человек, два гида на маршрутах Мангистау и Кольсая.</li>
+        <li><strong>Аптечка и связь</strong> — спутниковый телефон на дальних выездах, гид с курсом первой помощи.</li>
+      </ul>
+    </div>
+    <div class="about__media">
+      <img src="assets/about-assy.jpg" alt="Плато Ассы в горах Заилийского Алатау" loading="lazy">
+      <p class="caption">Плато Ассы, июль — наш разведочный выезд перед новым маршрутом</p>
+    </div>
+  </section>
+
+  <section class="section reviews" id="reviews">
+    <div class="section__head">
+      <h2>Что говорят после поездки</h2>
+    </div>
+    <div class="reviews__grid">
+      <figure class="review">
+        <blockquote>Ехала одна и боялась, что буду лишней в группе. К концу второго дня мы всей машиной пели в дороге, а гид знал каждый поворот Чарына и где ловит связь.</blockquote>
+        <figcaption>Дана, Алматы — Чарын, май 2026</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote>Мангистау — это другая планета. Организация без единого провала: вода, еда, юрты, запасной внедорожник. Единственное, чего не хватило, — ещё двух дней.</blockquote>
+        <figcaption>Ержан, Астана — Мангистау, апрель 2026</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote>Брали тур на Кольсай с ребёнком семи лет. Темп подстроили под нас, никто не торопил на подъёме. Вернулись и сразу забронировали Туркестан.</blockquote>
+        <figcaption>Семья Абдразаковых — Кольсай, август 2026</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="request" id="request">
+    <div class="request__media" aria-hidden="true"></div>
+    <div class="request__inner">
+      <div class="request__text">
+        <h2>Оставьте заявку</h2>
+        <p>Перезвоним в течение рабочего дня, подберём маршрут под ваши даты и состав группы. Предоплату берём только после того, как всё согласовали.</p>
+        <ul class="request__contacts">
+          <li><a href="tel:+77273501122">+7 (727) 350-11-22</a></li>
+          <li><a href="mailto:hello@kalieva.travel">hello@kalieva.travel</a></li>
+          <li>Алматы, улица Кунаева 21, офис 4</li>
+          <li>Ежедневно с 9:00 до 20:00</li>
+        </ul>
+      </div>
+
+      <form class="form" id="requestForm" novalidate>
+        <div class="field">
+          <label for="name">Как вас зовут</label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="Аружан Калиева" required>
+          <span class="error" data-error-for="name"></span>
+        </div>
+
+        <div class="field">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+          <span class="error" data-error-for="phone"></span>
+        </div>
+
+        <div class="field">
+          <label for="tour">Маршрут</label>
+          <select id="tour" name="tour">
+            <option value="">Ещё не выбрали — подскажите</option>
+            <option>Чарын и Долина замков</option>
+            <option>Кольсайские озёра</option>
+            <option>Затопленный лес Каинды</option>
+            <option>Мангистау — Бозжыра и Тузбаир</option>
+            <option>Туркестан и городище Отрар</option>
+            <option>Алтын-Эмель — Поющий бархан</option>
+            <option>Бурабай и Окжетпес</option>
+          </select>
+        </div>
+
+        <div class="field field--half">
+          <label for="date">Дата заезда</label>
+          <select id="date" name="date"></select>
+        </div>
+
+        <div class="field field--half">
+          <label for="people">Человек</label>
+          <input type="number" id="people" name="people" min="1" max="12" value="2">
+        </div>
+
+        <div class="field">
+          <label for="comment">Комментарий</label>
+          <textarea id="comment" name="comment" rows="3" placeholder="Едем с детьми, нужен трансфер из аэропорта"></textarea>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" id="agree" name="agree" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <span class="error" data-error-for="agree"></span>
+
+        <button type="submit" class="btn btn--primary btn--wide">Отправить заявку</button>
+        <p class="form__status" id="formStatus" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="brand__name">KALIEVA TRAVEL</span>
+      <p>Авторские туры по Казахстану с 2018 года. ИП Калиева А. Б., БИН 180340021547.</p>
+    </div>
+    <div class="footer__col">
+      <h3>Маршруты</h3>
+      <a href="#tours">Все направления</a>
+      <a href="#dates">Расписание заездов</a>
+      <a href="#request">Индивидуальный тур</a>
+    </div>
+    <div class="footer__col">
+      <h3>Контакты</h3>
+      <a href="tel:+77273501122">+7 (727) 350-11-22</a>
+      <a href="mailto:hello@kalieva.travel">hello@kalieva.travel</a>
+      <span>Алматы, Кунаева 21, офис 4</span>
+    </div>
+    <div class="footer__col">
+      <h3>Мы в сетях</h3>
+      <a href="#request">Instagram</a>
+      <a href="#request">Telegram</a>
+      <a href="#request">WhatsApp</a>
+    </div>
+  </div>
+  <p class="footer__legal">© 2026 KALIEVA TRAVEL. Фотографии — Wikimedia Commons, авторы указаны в CREDITS.md</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
