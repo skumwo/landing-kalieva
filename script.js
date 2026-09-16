@@ -1,5 +1,29 @@
 "use strict";
 
+/* ---------- Фото: повторная загрузка при сбое сети ---------- */
+
+// Браузер не перезапрашивает картинку после сетевой ошибки, поэтому
+// сами пробуем ещё несколько раз с паузой, прежде чем сдаться.
+const IMG_RETRIES = 3;
+
+function retryImage(img) {
+  const tries = Number(img.dataset.retries || 0);
+  if (tries >= IMG_RETRIES) return;
+  img.dataset.retries = String(tries + 1);
+  const base = img.getAttribute("src").split("?")[0];
+  setTimeout(() => { img.src = `${base}?retry=${tries + 1}`; }, 1000 * (tries + 1));
+}
+
+// Событие error не всплывает, ловим на фазе перехвата.
+document.addEventListener("error", (event) => {
+  if (event.target instanceof HTMLImageElement) retryImage(event.target);
+}, true);
+
+// Первый экран мог упасть ещё до того, как скрипт загрузился.
+document.querySelectorAll("img").forEach((img) => {
+  if (img.complete && img.currentSrc && img.naturalWidth === 0) retryImage(img);
+});
+
 /* ---------- Данные заездов ---------- */
 
 const TRIPS = [
